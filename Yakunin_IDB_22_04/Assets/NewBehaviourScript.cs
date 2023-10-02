@@ -4,24 +4,25 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    private GameObject obj;
+    public GameObject obj;
     // Start is called before the first frame update
     void Start()
     {
-        obj = GameObject.FindWithTag("Player");
+       // obj = GameObject.FindWithTag("Player");
     }
 
     // Update is called once per frame
-    void Update()
+    public void actdeact1()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if(obj.activeSelf)
+       // if (Input.GetKeyDown(KeyCode.Space))
+      //  {
+            if (obj.activeSelf)
             {
                 obj.SetActive(false);
             }
             else
                 obj.SetActive(true);
-        }
+       // }
     }
+    
 }
